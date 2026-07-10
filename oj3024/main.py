@@ -2,7 +2,7 @@
 
 allsum = float(input())
 maxScore = float(input())
-if maxScore - (allsum - (maxScore*2)) <= 2:
+if maxScore - max(0,(allsum - (maxScore*2))) <= 2:
     print("Not surprising")
 else:
     print("Surprising")

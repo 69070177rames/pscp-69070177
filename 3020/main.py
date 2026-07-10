@@ -5,16 +5,14 @@ bottleCap = int(input())
 newCost = int(input())
 want = int(input())
 
-if bottleCap:
-    if bottleCap == 1:
-        asdasdas = 0
-    elif not want % bottleCap:
-        floor = (want // bottleCap)-1
+if bottleCap and want > 0:
+    if not want % bottleCap :
+        PROMO = (want // bottleCap)-1
     else:
-        floor = want // bottleCap
+        PROMO = want // bottleCap
 else:
-    floor = 0
-promoCost = floor * newCost
-normalCost = (want - floor) * cost
+    PROMO = 0
+promoCost = PROMO * newCost
+normalCost = (want - PROMO) * cost
 
 print(promoCost + normalCost)
