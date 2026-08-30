@@ -6,7 +6,7 @@ salary = int(salary)
 money = 0
 if pos == "m":
     money += 1500
-    if year < 5:
+    if year < 6:
         money += salary * 0.06
     elif year <= 10:
         money += salary * 0.08
@@ -14,7 +14,7 @@ if pos == "m":
         money += salary * 0.10
 elif pos == "b":
     money += 1000
-    if year < 5:
+    if year < 6:
         money += salary * 0.05
     elif year <= 10:
         money += salary * 0.06
@@ -22,7 +22,7 @@ elif pos == "b":
         money += salary * 0.07
 elif pos == "g":
     money += 500
-    if year < 5:
+    if year < 6:
         money += salary * 0.04
     elif year <= 10:
         money += salary * 0.05
